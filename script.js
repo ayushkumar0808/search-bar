@@ -1,6 +1,6 @@
 const userData = [
   {
-    profileUrl: "https://i.pravatar.cc/150?img=1",
+    profileUrl: "assets/ayush_img.png",
     name: "Ayush Kumar",
     email: "ayush@example.com",
   },
