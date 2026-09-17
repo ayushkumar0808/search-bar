@@ -24,31 +24,31 @@ const userData = [
     name: "Neha Gupta",
     email: "neha@example.com",
   },
-  {
-    profileUrl: "https://i.pravatar.cc/150?img=6",
-    name: "Rohan Mehta",
-    email: "rohan@example.com",
-  },
-  {
-    profileUrl: "https://i.pravatar.cc/150?img=10",
-    name: "Sneha Patel",
-    email: "sneha@example.com",
-  },
-  {
-    profileUrl: "https://i.pravatar.cc/150?img=11",
-    name: "Vikash Yadav",
-    email: "vikash@example.com",
-  },
-  {
-    profileUrl: "https://i.pravatar.cc/150?img=9",
-    name: "Ananya Rao",
-    email: "ananya@example.com",
-  },
-  {
-    profileUrl: "https://i.pravatar.cc/150?img=7",
-    name: "Karan Malhotra",
-    email: "karan@example.com",
-  },
+  //   {
+  //     profileUrl: "https://i.pravatar.cc/150?img=6",
+  //     name: "Rohan Mehta",
+  //     email: "rohan@example.com",
+  //   },
+  //   {
+  //     profileUrl: "https://i.pravatar.cc/150?img=10",
+  //     name: "Sneha Patel",
+  //     email: "sneha@example.com",
+  //   },
+  //   {
+  //     profileUrl: "https://i.pravatar.cc/150?img=11",
+  //     name: "Vikash Yadav",
+  //     email: "vikash@example.com",
+  //   },
+  //   {
+  //     profileUrl: "https://i.pravatar.cc/150?img=9",
+  //     name: "Ananya Rao",
+  //     email: "ananya@example.com",
+  //   },
+  //   {
+  //     profileUrl: "https://i.pravatar.cc/150?img=7",
+  //     name: "Karan Malhotra",
+  //     email: "karan@example.com",
+  //   },
 ];
 
 let userContainer = document.querySelector(".userContainer");
