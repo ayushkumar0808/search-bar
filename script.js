@@ -48,7 +48,7 @@ const userData = [
   //     profileUrl: "https://i.pravatar.cc/150?img=7",
   //     name: "Karan Malhotra",
   //     email: "karan@example.com",
-  //   },
+  /// },
 ];
 
 let userContainer = document.querySelector(".userContainer");
