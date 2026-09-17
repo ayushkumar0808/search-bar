@@ -52,19 +52,41 @@ const userData = [
 ];
 
 let userContainer = document.querySelector(".userContainer");
+let userInput = document.querySelector("#userInput");
 
-userData.map((obj) => {
-  let div = document.createElement("div");
-  div.className = "userItem";
-  let { profileUrl, email, name } = obj;
+function renderUser(arr) {
+  userContainer.innerHTML = " ";
+  arr.map((obj) => {
+    let div = document.createElement("div");
+    div.className = "userItem";
 
-  div.innerHTML = `
-    <img src="${profileUrl}" alt="" />
-    <div class="userDetails">
-      <h3>${name}</h3>
-      <p>${email}</p>
-    </div>
+    let { profileUrl, email, name } = obj;
 
-`;
-  userContainer.append(div);
-});
+    div.innerHTML = `
+      <img src="${profileUrl}" alt="" />
+      <div class="userDetails">
+        <h3>${name}</h3>
+        <p>${email}</p>
+      </div>
+
+  `;
+    userContainer.append(div);
+  });
+  if (userContainer.innerHTML === " ") {
+    userContainer.innerHTML = `<div style=" text-align: center;"><p stlye=" font-size: 22px;
+  color: #222; " >No user found </p></div>`;
+  }
+}
+renderUser(userData);
+
+const handleSearch = (e) => {
+  const resultArr = userData.filter((obj) => {
+    let { email, name } = obj;
+    return (
+      name.toLowerCase().includes(e.target.value.toLowerCase()) ||
+      email.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+  });
+  renderUser(resultArr);
+};
+userInput.addEventListener("input", handleSearch);
